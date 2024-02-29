@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Puhelinluettelo</title>
+</head>
+<body>
+    <a id="returnButton" href="index.html" aria-label="Palaa takaisin etusivulle">
+        <img src="Images/arrow_icon.png" alt="return button">
+    </a>
+    <header>
+        <h1>Puhelinluettelo</h1>
+      </header>
+      <main>
+        <div id="tableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Hae puhelinnumeroa nimellä</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input name="name" id="searchInput" type="text" placeholder="Syötä nimi" aria-label="Syötä nimi">
+                        </td>
+                        <td>
+                            <input name="submit" type="button" id="searchButton" value="Hae" aria-label="Hae puhelinnumeroa"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright &copy; Lauri Saarenpää 2024</p>
+      </footer>
+      <script src="Scripts/search.js"></script>
+</body>
+</html>
