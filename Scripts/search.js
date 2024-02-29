@@ -8,7 +8,9 @@ const createErrMsg = (tbody, msg) => { // Function that generates a row with an 
 };
 
 $(document).ready(() => {
-  $('[name="submit"]').click(async () => { // When the search button is clicked
+  $('[name="submit"]').click(async (event) => { // When the search button is clicked
+
+    event.preventDefault(); // Prevents the default form submission
 
     $('[name="submit"]').blur(); // Removes focus from the button, done to prevent the button from being stuck in the focused state
 
